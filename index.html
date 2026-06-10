@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujan Settem: Analytics & Sales Operations Portfolio</title>
+<style>
+  :root{--blue:#2E75B6;--ink:#1f2937;--grey:#555;--bg:#f7f9fc;--card:#fff;--line:#e5e9f0;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;}
+  .wrap{max-width:920px;margin:0 auto;padding:48px 24px 64px;}
+  header{border-bottom:3px solid var(--blue);padding-bottom:22px;margin-bottom:36px;}
+  h1{font-size:34px;letter-spacing:.3px;}
+  .role{color:var(--blue);font-weight:700;font-size:17px;margin-top:4px;letter-spacing:.4px;text-transform:uppercase;}
+  .blurb{color:var(--grey);margin-top:12px;font-size:15.5px;max-width:680px;}
+  .links{margin-top:16px;font-size:14.5px;}
+  .links a{color:var(--blue);text-decoration:none;font-weight:600;}
+  .links a:hover{text-decoration:underline;}
+  .links span{color:#c3cad6;margin:0 8px;}
+  h2.section{font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--grey);margin:38px 0 18px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin-bottom:20px;box-shadow:0 1px 3px rgba(20,40,80,.04);}
+  .card h3{font-size:20px;}
+  .tag{display:inline-block;font-size:12px;font-weight:600;color:var(--blue);background:#eaf2fb;border-radius:20px;padding:3px 11px;margin-top:8px;}
+  .row{margin-top:14px;display:flex;gap:10px;}
+  .row .k{flex:0 0 78px;font-weight:700;font-size:13px;color:var(--blue);padding-top:1px;}
+  .row .v{font-size:14.5px;color:var(--ink);}
+  .cta{display:inline-block;margin-top:18px;font-size:14px;font-weight:600;color:#fff;background:var(--blue);padding:8px 16px;border-radius:8px;text-decoration:none;}
+  .cta:hover{background:#255e95;}
+  .stack{margin-top:14px;font-size:13px;color:var(--grey);}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--grey);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Sujan Settem</h1>
+    <div class="role">Sales &amp; Business Operations Analyst</div>
+    <p class="blurb">MS in Business Analytics with 5+ years across sales and business operations, including hands-on CRM pipeline ownership. I turn messy sales and operational data into the dashboards, forecasts, and decisions that help teams sell faster and run smarter.</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/sujan-settem-121406184">LinkedIn</a><span>|</span>
+      <a href="https://github.com/ssettem/f1-racing-bi">GitHub</a><span>|</span>
+      <a href="mailto:sujansettem@gmail.com">sujansettem@gmail.com</a>
+    </div>
+  </header>
+
+  <h2 class="section">Selected Projects</h2>
+
+  <div class="card">
+    <h3>Sales Pipeline &amp; Revenue Operations Analysis</h3>
+    <span class="tag">Sales Operations · Pipeline, Win Rates, Forecasting</span>
+    <div class="row"><div class="k">Question</div><div class="v">Acting as the sales-ops analyst for a SaaS team: is the pipeline healthy, where do deals leak, and what should leadership do about it?</div></div>
+    <div class="row"><div class="k">What I did</div><div class="v">Analyzed 560 opportunities end to end: pipeline health by stage, win rates by rep, region, and source, sales-cycle comparison, and a stage-weighted revenue forecast.</div></div>
+    <div class="row"><div class="k">Decision</div><div class="v">Found the leak is qualification quality (not speed), flagged a 13-point regional win-rate gap, and recommended shifting effort to higher-converting lead sources; forecast $2.32M weighted from $4.97M open pipeline.</div></div>
+    <a class="cta" href="sales_ops_case_study.html">View full analysis</a>
+  </div>
+
+  <div class="card">
+    <h3>Revenue Intelligence Dashboard</h3>
+    <span class="tag">Revenue Operations · Interactive BI</span>
+    <div class="row"><div class="k">Question</div><div class="v">How is revenue trending, what is driving it, and how is each rep and segment performing?</div></div>
+    <div class="row"><div class="k">What I did</div><div class="v">Built an interactive dashboard tracking revenue vs. target, pipeline funnel, win rate, deal size, sales cycle, and rep performance, with Python-generated data and Chart.js.</div></div>
+    <div class="row"><div class="k">Decision</div><div class="v">Gives leadership a clear, real-time read on attainment and pipeline coverage so they can act early instead of reacting late.</div></div>
+    <a class="cta" href="Revenue_Intelligence_Platform.html">View dashboard</a>
+  </div>
+
+  <div class="card">
+    <h3>F1 Cost-Cap Analytics: Forecasting &amp; Predictive Modeling</h3>
+    <span class="tag">MS Capstone · Forecasting &amp; ML</span>
+    <div class="row"><div class="k">Question</div><div class="v">After F1 capped every team's budget, does spending money <em>efficiently</em> still predict winning, or does raw spend matter less than people think?</div></div>
+    <div class="row"><div class="k">What I did</div><div class="v">I owned the forecasting and predictive-modeling workstreams: ARIMAX time-series forecasting and a Random Forest model across 11 seasons, on a shared SQL/Tableau data layer my team assembled.</div></div>
+    <div class="row"><div class="k">Result</div><div class="v">Forecast baseline MAPE of 5.03%; the Random Forest model outperformed a deep neural network; the analysis linked financial efficiency to on-track performance.</div></div>
+    <div class="stack">Tools: R, Python (scikit-learn), Tableau, SQL</div>
+    <a class="cta" href="https://github.com/ssettem/f1-racing-bi">View code on GitHub</a>
+  </div>
+
+  <footer>
+    Built and analyzed by Sujan Settem. Happy to walk through the data and the decisions behind any of these in conversation.
+  </footer>
+</div>
+</body>
+</html>
