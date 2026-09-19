@@ -152,6 +152,7 @@
   .footer a { color: var(--accent); text-decoration: none; }
   .footer strong { color: var(--text); }
 </style>
+<link rel="stylesheet" href="assets/motion.css">
 </head>
 <body>
 
@@ -181,31 +182,31 @@
   <!-- KPI ROW -->
   <div class="section-title">Executive Summary, Q1+Q2 FY2026</div>
   <div class="kpi-row">
-    <div class="kpi green">
+    <div class="kpi green reveal">
       <div class="kpi-label">Revenue Closed</div>
       <div class="kpi-value">$4.82M</div>
       <div class="kpi-change up">▲ 23.4% vs prior year</div>
       <div class="kpi-sub">Target: $4.5M · 107% attainment</div>
     </div>
-    <div class="kpi blue">
+    <div class="kpi blue reveal" style="--d:.05s">
       <div class="kpi-label">Active Pipeline</div>
       <div class="kpi-value">$11.3M</div>
       <div class="kpi-change up">▲ 2.5× pipeline coverage</div>
       <div class="kpi-sub">187 open opportunities</div>
     </div>
-    <div class="kpi amber">
+    <div class="kpi amber reveal" style="--d:.1s">
       <div class="kpi-label">Win Rate</div>
       <div class="kpi-value">34.2%</div>
       <div class="kpi-change up">▲ 4.1pp vs Q1 2025</div>
       <div class="kpi-sub">Industry avg: 28%</div>
     </div>
-    <div class="kpi purple">
+    <div class="kpi purple reveal" style="--d:.15s">
       <div class="kpi-label">Avg Deal Size</div>
       <div class="kpi-value">$68.4K</div>
       <div class="kpi-change up">▲ 11.2% YoY</div>
       <div class="kpi-sub">Enterprise mix increasing</div>
     </div>
-    <div class="kpi red">
+    <div class="kpi red reveal" style="--d:.2s">
       <div class="kpi-label">Avg Sales Cycle</div>
       <div class="kpi-value">47 days</div>
       <div class="kpi-change down">▼ 8 days vs target</div>
@@ -215,14 +216,14 @@
 
   <!-- ROW 1: Revenue Chart + Pipeline Funnel -->
   <div class="grid-7030">
-    <div class="card">
+    <div class="card reveal">
       <div class="card-header">
         <div class="card-title">Monthly Revenue, Forecast vs Actual</div>
         <span class="card-badge badge-green">107% Annual Attainment</span>
       </div>
       <canvas id="revenueChart"></canvas>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <div class="card-header">
         <div class="card-title">Pipeline Funnel</div>
         <span class="card-badge badge-blue">$11.3M Total</span>
@@ -233,14 +234,14 @@
 
   <!-- ROW 2: Rep Performance + Deal Velocity -->
   <div class="grid-7030">
-    <div class="card">
+    <div class="card reveal">
       <div class="card-header">
         <div class="card-title">Rep Performance Leaderboard</div>
         <span class="card-badge badge-amber">6 Reps · H1 FY2026</span>
       </div>
       <table class="rep-table" id="repTable"></table>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <div class="card-header">
         <div class="card-title">Deal Velocity Metrics</div>
         <span class="card-badge badge-blue">Sales Operations</span>
@@ -251,14 +252,14 @@
 
   <!-- ROW 3: Win/Loss by Source + Cohort Heatmap -->
   <div class="grid-3070">
-    <div class="card">
+    <div class="card reveal">
       <div class="card-header">
         <div class="card-title">Win Rate by Lead Source</div>
         <span class="card-badge badge-green">Best: Referral 51%</span>
       </div>
       <canvas id="winRateChart"></canvas>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <div class="card-header">
         <div class="card-title">Customer Cohort Retention Heatmap</div>
         <span class="card-badge badge-amber">6 Cohorts · 6-Month View</span>
@@ -269,14 +270,14 @@
 
   <!-- ROW 4: Revenue Mix + Forecast Accuracy -->
   <div class="grid-2">
-    <div class="card">
+    <div class="card reveal">
       <div class="card-header">
         <div class="card-title">Revenue Mix by Segment</div>
         <span class="card-badge badge-purple">Enterprise Growing</span>
       </div>
       <canvas id="segmentChart"></canvas>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <div class="card-header">
         <div class="card-title">Forecast Accuracy Trend</div>
         <span class="card-badge badge-blue">12-Month View</span>
@@ -286,7 +287,7 @@
   </div>
 
   <!-- AI INSIGHTS -->
-  <div class="card" style="margin-bottom:16px">
+  <div class="card reveal" style="margin-bottom:16px">
     <div class="card-header">
       <div class="card-title">⚡ AI-Generated Business Insights</div>
       <span class="card-badge badge-blue">GPT-4 Analysis · Based on above data</span>
@@ -552,5 +553,6 @@ document.getElementById('insightGrid').innerHTML = insights.map(ins=>`
     <div class="insight-body">${ins.body}</div>
   </div>`).join('');
 </script>
+<script src="assets/motion.js" defer></script>
 </body>
 </html>

@@ -9,18 +9,18 @@
   *{box-sizing:border-box;margin:0;padding:0;}
   body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;}
   .wrap{max-width:920px;margin:0 auto;padding:48px 24px 64px;}
-  header{border-bottom:3px solid var(--blue);padding-bottom:22px;margin-bottom:36px;}
+  header{padding-bottom:22px;margin-bottom:36px;position:relative;}
   h1{font-size:34px;letter-spacing:.3px;}
   .role{color:var(--blue);font-weight:700;font-size:17px;margin-top:4px;letter-spacing:.4px;text-transform:uppercase;}
   .blurb{color:var(--grey);margin-top:12px;font-size:15.5px;max-width:680px;}
   .links{margin-top:16px;font-size:14.5px;}
   .links a{color:var(--blue);text-decoration:none;font-weight:600;}
   .links a:hover{text-decoration:underline;}
-  .links span{color:#c3cad6;margin:0 8px;}
+  .links span{color:#8b93a3;margin:0 8px;}
   h2.section{font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--grey);margin:38px 0 18px;}
   .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin-bottom:20px;box-shadow:0 1px 3px rgba(20,40,80,.04);}
   .card h3{font-size:20px;}
-  .tag{display:inline-block;font-size:12px;font-weight:600;color:var(--blue);background:#eaf2fb;border-radius:20px;padding:3px 11px;margin-top:8px;}
+  .tag{display:inline-block;font-size:12px;font-weight:600;color:#1f5a8f;background:#eaf2fb;border-radius:20px;padding:3px 11px;margin-top:8px;}
   .row{margin-top:14px;display:flex;gap:10px;}
   .row .k{flex:0 0 78px;font-weight:700;font-size:13px;color:var(--blue);padding-top:1px;}
   .row .v{font-size:14.5px;color:var(--ink);}
@@ -29,10 +29,11 @@
   .stack{margin-top:14px;font-size:13px;color:var(--grey);}
   footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--grey);}
 </style>
+<link rel="stylesheet" href="assets/motion.css">
 </head>
 <body>
 <div class="wrap">
-  <header>
+  <header class="draw-line">
     <h1>Sujan Settem</h1>
     <div class="role">Sales &amp; Business Operations Analyst</div>
     <p class="blurb">MS in Business Analytics with 5+ years across sales and business operations, including hands-on CRM pipeline ownership. I turn messy sales and operational data into the dashboards, forecasts, and decisions that help teams sell faster and run smarter.</p>
@@ -45,7 +46,7 @@
 
   <h2 class="section">Selected Projects</h2>
 
-  <div class="card">
+  <div class="card reveal" style="--d:0s">
     <h3>F1 Cost-Cap Analytics: Forecasting &amp; Predictive Modeling</h3>
     <span class="tag">MS Capstone · Forecasting &amp; ML</span>
     <div class="row"><div class="k">Question</div><div class="v">After F1 capped every team's budget, does spending money <em>efficiently</em> still predict winning, or does raw spend matter less than people think?</div></div>
@@ -56,7 +57,7 @@
     <a class="cta" href="https://github.com/ssettem/f1-racing-bi" style="background:#fff;color:#2E75B6;border:1px solid #2E75B6;margin-left:8px;">View code on GitHub</a>
   </div>
 
-  <div class="card">
+  <div class="card reveal" style="--d:.08s">
     <h3>Sales Pipeline &amp; Revenue Operations Analysis</h3>
     <span class="tag">Sales Operations · Pipeline, Win Rates, Forecasting</span>
     <div class="row"><div class="k">Question</div><div class="v">Acting as the sales-ops analyst for a SaaS team: is the pipeline healthy, where do deals leak, and what should leadership do about it?</div></div>
@@ -65,7 +66,7 @@
     <a class="cta" href="sales_ops_case_study.html">View full analysis</a>
   </div>
 
-  <div class="card">
+  <div class="card reveal" style="--d:.16s">
     <h3>Revenue Intelligence Dashboard</h3>
     <span class="tag">Revenue Operations · Interactive BI</span>
     <div class="row"><div class="k">Question</div><div class="v">How is revenue trending, what is driving it, and how is each rep and segment performing?</div></div>
@@ -78,5 +79,6 @@
     Built and analyzed by Sujan Settem. Happy to walk through the data and the decisions behind any of these in conversation.
   </footer>
 </div>
+<script src="assets/motion.js" defer></script>
 </body>
 </html>
