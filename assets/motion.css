@@ -40,18 +40,8 @@
   box-shadow: 0 8px 20px rgba(20,40,80,.09);
 }
 
-/* Live/status dot pulse (dashboard) */
-.live-dot {
-  animation: pulse-dot 2s ease-in-out infinite;
-}
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .45; }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .draw-line::after { animation: none; transform: scaleX(1); }
-  .live-dot { animation: none; }
   .card { transition: none; }
 }
